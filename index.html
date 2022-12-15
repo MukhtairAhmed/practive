@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<!-- style-link -->
+<!-- <link rel="stylesheet" href="./app.css"> -->
+<!-- font-awsome-link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+ <!-- google-fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,900&family=Montserrat:wght@300;800&family=Open+Sans:ital,wght@0,300;0,500;1,300&family=Poppins:wght@100&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+/* font-family: 'Poppins', sans-serif; */
+}
+
+
+header{
+max-width:100%;
+height: 100vh;
+display: grid;
+grid-template-columns: 1fr 1fr 3fr;
+ background: url(background.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: right center; 
+}
+
+
+header .logo{
+padding-top: 50px;
+padding-left: 50px;
+}
+
+
+nav{
+    flex-wrap: wrap;
+flex-basis: 50%;
+}
+
+nav ul{
+list-style: none;
+display: flex;
+padding-top: 55px;
+padding-left: 280px;
+}
+
+
+nav ul li{
+margin: 10px;
+font-size: 18px;
+font-weight: 800;
+}
+
+
+nav a{
+text-decoration: none;
+color: black;
+}
+
+
+.icion {
+padding-top: 59px;
+display: flex;
+padding-left: 100px;
+}
+
+
+.icion i{
+margin: 7px;
+font-size: 20px;
+}
+
+
+.header-content{
+width: 100%;
+position: relative;
+left: 120px;
+top: -20px;
+display: block;
+}
+
+
+.header-content span{
+color: red;
+font-size: 12px;
+}
+
+.header-content h1{
+font-size: 40px;
+line-height: 40px;
+font-weight: 800;
+width: 300px;
+font-family: 'Poppins', sans-serif; 
+}
+
+
+.header-content p{
+font-size:12px;
+font-style: italic;
+position: relative;
+top: 5px;
+}
+
+
+
+.header-content .btn{
+padding: 6px 10px;
+color: black;
+border: 3px solid black;
+position: relative;
+top: 27px;
+font-size: 18px;
+}
+
+.header-content a{
+text-decoration: none;
+color: black;
+}
+
+
+.header-content i{
+position: relative;
+left: 5px; 
+font-size: 16px;
+}
+
+header h5{
+writing-mode: vertical-rl;
+position: relative;
+top: -50px;
+left: 300px;
+font-size: 15px;
+font-weight: 800;
+}
+
+
+.box{
+width: 100%;
+text-align: center;
+display: block;
+position: relative;
+top: 100px;
+}
+
+
+.box h1{
+position: relative;
+font-size: 40px;
+font-weight: 800;
+}
+
+
+.box h1::before{
+content: '';
+width: 150px;
+background: red;
+position: absolute;
+left: 44%;
+top: 45px;
+right: 0px;
+bottom: 0px;
+height: 5px;
+border-radius: 10px;
+}
+
+
+
+
+.box-1{
+display: grid;
+grid-template-columns: 240px 240px 240px 220px;
+grid-gap: 40px;
+grid-template-rows: 350px 350px 200px;
+padding-top: 150px;
+cursor: pointer;
+}
+
+
+.box-2{
+margin: 10px;
+position: relative;
+left: 130px;
+display: block;
+flex-wrap: wrap;
+width: 240px;
+height: 325px;
+padding: 30px 30px;
+border: 1px solid green;
+background: #fff;
+box-shadow: 1px 1px 10px rgb(0,0,0,0.2);
+border-radius: 10px;
+cursor: pointer;
+}
+
+
+.box-2 img {
+    width: 220px;
+    height: 224px;
+    border-radius: 10px;
+    position: relative;
+    left: -22px;
+    top: -19px;
+}
+
+
+
+.box-text{
+position: absolute;
+display: flex;
+}
+
+.box-2 span{
+position: relative;
+font-size: 15px;
+font-weight: 800;
+left: -20px;
+top: -12px;
+}
+
+
+.box-2 ins{
+text-decoration: none;
+font-weight: 800;
+position: relative;
+left: -147px;
+top: 27px;
+}
+
+.box-star{
+width: 250px;
+position: relative;
+left: -22px;
+top: 8px;
+}
+
+
+.box-right {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border: 1px solid green;
+    border-radius: 40px;
+    left: 192px;
+    padding-top: 9px;
+    padding-left: 6px;
+    background:#D0D3D4;
+
+}
+
+
+.box-right i{
+color: green;
+cursor: pointer;
+}
+
+
+.box-2:hover{
+transform: scaleY(0,9);
+}
+
+.box-2:nth-child(1):hover{
+background: #f3f5f6;
+}
+
+
+
+
+.box-2:nth-child(2):hover{
+    background: #f3f5f6;
+}
+
+
+.box-2:nth-child(3):hover{
+    background: #f3f5f6;
+}
+
+
+.box-2:nth-child(4):hover{
+    background: #f3f5f6;
+}
+
+
+.box-2:nth-child(5):hover{
+    background: #f3f5f6;
+}
+
+
+.box-2:nth-child(6):hover{
+    background: #f3f5f6;
+}
+
+
+
+.box-2:nth-child(7):hover{
+    background: #f3f5f6;
+}
+
+.box-2:nth-child(8):hover{
+    background: #f3f5f6;
+}
+
+
+.box-2:nth-child(9):hover{
+    background: #f3f5f6;
+}
+
+.box-2:nth-child(10):hover{
+    background: #f3f5f6;
+}
+
+.box-2:nth-child(11):hover{
+    background: #f3f5f6;
+}
+
+.box-2:nth-child(12):hover{
+    background: #f3f5f6;
+}
+
+
+.col{
+width: 100%;
+height: 100vh;
+text-align: center;
+padding-top: 240px;
+display: grid;
+grid-template-columns: 240px 240px 240px 240px;
+grid-gap: 4%;
+}
+
+.cols{
+width: 250px;
+background: #fff;
+margin: 5px;
+height: 350px;
+box-sizing: border-box;
+box-shadow: 1px 1px 10px rgb(0,0,0,0.2);
+border-radius: 10px;
+position: relative;
+left:  110px;
+}
+
+.cols img{
+width: 100%;
+border-radius: 10px;
+}
+
+
+.cols span{
+position: relative;
+font-weight: 700px;
+text-transform: uppercase;
+left: -95px;
+top: 8px;
+font-size: 15px;
+}
+
+.cols a{
+text-decoration: none;
+color: black;
+}
+
+.cols p{
+width: 235px;
+text-align: justify;
+position: relative;
+top: 10px;
+left: 5px;
+}
+
+
+.cols .btm{
+width: 100px;
+background: darkgray;
+color: #fff;
+padding: 5px 7px;
+border-radius: 30px;
+position: relative;
+left: 1px;
+top: 22px;
+}
+
+.cols .btm:hover{
+background: transparent;
+border: 1px solid black;
+border-radius: 30px;
+color: black;
+}
+
+
+.cols:hover{
+transform: scale(0.9);
+}
+
+
+
+.footer{
+width: 100%;
+background: black;
+height: 130px;
+color: #fff;
+position: relative;;
+margin: 0px;
+padding: 0px;
+}
+
+
+
+.footer-list span {
+    text-decoration-line:double;
+ text-decoration-color: #f36632; 
+    color: #fff;
+    position: relative;
+    left: 170px;
+    top: -2px;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.footer-list{
+display: inline-flex;
+margin: 15px;
+color: black;
+justify-content: space-evenly;
+}
+
+.footer-list ul{
+list-style: none;
+position: relative;
+top: 20px;
+left: 100px;
+}
+ 
+.footer-list ul li {
+    color: #f36632;
+    margin: 1px;
+}
+
+
+.footer-list i{
+color: orangered;
+position: relative;
+left: 96px;
+top: 26px;
+margin: 3px;
+cursor: pointer;
+width: 30px;
+height: 30px;
+background: #D0D3D4;
+border-radius: 50%;
+padding-top: 7px;
+padding-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:320px) and (max-width:767px){
+html{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav ul{
+display: none;
+}
+
+h5{
+    display: none;
+}
+
+.icion i{
+display: none;
+}
+
+
+header{
+width: 100%;
+background-position: center center;
+display: flex;
+justify-content: space-evenly;
+align-content: stretch;
+flex-wrap: wrap;
+}
+
+header img{
+    width: 136px;
+    position: absolute;
+    left: 27px;
+    top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.header-content{
+    position: absolute;
+    width: 50%;
+    display: block;
+    top: 150px;
+    left: 1px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.header-content span {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    width: 100%;
+}
+
+.header-content h1 {
+    font-size: 29px;
+    line-height: 29px;
+    font-family: monospace;
+    width: 100%;
+    position: absolute;
+    top: 16px;
+    display: initial;
+}
+
+.header-content p {
+    font-size: 12px;
+    font-style: italic;
+    position: absolute;
+    top: 108px;
+    width: 194%;
+}
+
+.header-content .btn {
+    padding: 6px 3px;
+    color: black;
+    border: 3px solid black;
+    position: absolute;
+    top: 140px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.box h1 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 800;
+    width: 100%;
+}
+
+.box h1::before{
+display: none;
+}
+
+
+.box-1{
+    cursor: pointer;
+    position: absolute;
+    left: -125px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.col{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: -107px;
+    top: 5104px;
+    justify-content: space-around;
+}
+
+
+
+.cols{
+margin: 30px;
+}
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    background: black;
+    height: 340px;
+    color: #fff;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    top: 6469px;
+    text-align: center;
+}
+
+.footer-list span{
+color: #fff;
+    position: relative;
+    left: 170px;
+    top: 9px;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+
+.footer-list ul li {
+    color: #f36632;
+    margin: 1px;
+    position: relative;
+    left: 66px;
+    top: -13px;
+}
+
+.footer-list {
+    display: block;
+    margin: 0px;
+    color: black;
+    width: 100%;
+    position: relative;
+    left: -165px;
+}
+
+
+
+.footer i{
+display: none;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+    <!-- header-section -->
+
+<section>
+<header>
+<a href="" class="logo"><img width="150px" src="header.jpg" alt=""></a>
+
+<nav>
+<ul>
+    <li><a href="">Home</a></li>
+    <li><a href="">Service</a></li>
+    <li><a href="">Contact</a></li>
+    <li><a href="">Feedback</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Prices</a></li>
+</ul>
+</nav>
+
+<div class="icion">
+    <a href=""><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+    <a href=""><i class="fa-solid fa-user"></i></a>
+    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+    <a href=""><i class="fa-solid fa-cart-shopping"></i></a> 
+</div>
+
+<div class="header-content">
+<span>Viewa Collection</span>
+<h1>New Winter <br>Collection 2022 </h1>
+<p>There's Nothing Like Spend</p>
+<a href="" class="btn">Shop Now<i class="fa-solid fa-right-long"></i></a>
+</div>
+<h5>Sale off 30% Use Code :Ciloeoff</h5>
+</header>
+</section>
+
+<!-- box-section -->
+  <section>
+<div class="box">
+<h1 class="title">Featured Products </h1>
+</div>
+
+<div class="box-1">
+
+<div class="box-2">
+<img src="women2.jpg" alt="">
+<div class="box-text">
+    <span>Red Printed t-shirts</span>
+    <ins>$220.00</ins>
+</div>
+<div class="box-star">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <i class="fa-solid fa-cart-shopping"></i>
+    <i class="fa-solid fa-cart-shopping"></i>
+    <i class="fa-solid fa-cart-shopping"></i>
+    <i class="fa-solid fa-cart-shopping"></i>
+</div>
+<div class="box-right">
+    <i class="fa-solid fa-cart-shopping"></i>
+</div>
+</div>
+
+
+<div class="box-2">
+    <img src="women3.jpg" alt="">
+    <div class="box-text">
+        <span>Red Printed t-shirts</span>
+        <ins>$220.00</ins>
+    </div>
+    <div class="box-star">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    <div class="box-right">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    </div>       
+
+    
+<div class="box-2">
+    <img src="women4 - Copy.jpg" alt="">
+    <div class="box-text">
+        <span>Red Printed t-shirts</span>
+        <ins>$220.00</ins>
+    </div>
+    <div class="box-star">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    <div class="box-right">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    </div>       
+
+    
+<div class="box-2">
+    <img src="women5 - Copy.jpg" alt="">
+    <div class="box-text">
+        <span>Red Printed t-shirts</span>
+        <ins>$220.00</ins>
+    </div>
+    <div class="box-star">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    <div class="box-right">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    </div>       
+
+
+
+    
+<div class="box-2">
+    <img src="women1.jpg" alt="">
+    <div class="box-text">
+        <span>Red Printed t-shirts</span>
+        <ins>$220.00</ins>
+    </div>
+    <div class="box-star">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    <div class="box-right">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>    
+</div>  
+    
+
+
+   
+<div class="box-2">
+    <img src="women6 - Copy.jpg" alt="">
+    <div class="box-text">
+        <span>Red Printed t-shirts</span>
+        <ins>$220.00</ins>
+    </div>
+    <div class="box-star">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    <div class="box-right">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>    
+</div>  
+
+
+
+   
+<div class="box-2">
+    <img src="women7.jpg" alt="">
+    <div class="box-text">
+        <span>Red Printed t-shirts</span>
+        <ins>$220.00</ins>
+    </div>
+    <div class="box-star">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    <div class="box-right">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>    
+</div>  
+
+
+
+   
+<div class="box-2">
+    <img src="women8.jpg" alt="">
+    <div class="box-text">
+        <span>Red Printed t-shirts</span>
+        <ins>$220.00</ins>
+    </div>
+    <div class="box-star">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    <div class="box-right">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>    
+</div>  
+
+
+
+   
+<div class="box-2">
+    <img src="shoes.jpg" alt="">
+    <div class="box-text">
+        <span>Red Printed t-shirts</span>
+        <ins>$220.00</ins>
+    </div>
+    <div class="box-star">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    <div class="box-right">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>    
+</div>  
+
+   
+<div class="box-2">
+    <img src="shoes1.jpg" alt="">
+    <div class="box-text">
+        <span>Red Printed t-shirts</span>
+        <ins>$220.00</ins>
+    </div>
+    <div class="box-star">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    <div class="box-right">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>    
+</div>  
+
+   
+<div class="box-2">
+    <img src="shoes3.jpg" alt="">
+    <div class="box-text">
+        <span>Red Printed t-shirts</span>
+        <ins>$220.00</ins>
+    </div>
+    <div class="box-star">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    <div class="box-right">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>    
+</div>  
+
+   
+<div class="box-2">
+    <img src="shoes4.jpg" alt="">
+    <div class="box-text">
+        <span>Red Printed t-shirts</span>
+        <ins>$220.00</ins>
+    </div>
+    <div class="box-star">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    <div class="box-right">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>    
+</div>      
+</div>
+</section>
+
+<!-- col-section -->
+<section class="colum">
+<div class="col">
+<div class="cols add">
+<img src="women3.jpg" alt="">
+<span>TITLE 1</span>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque dolorum a! Eligendi consequatur distinctio unde quas, non soluta. Nisi.</p>
+<a href="" class="btm">Learn More</a>
+</div>
+
+<div  class="cols">
+<img src="women4 - Copy.jpg" alt="">
+<span>TITLE 1</span>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque dolorum a! Eligendi consequatur distinctio unde quas, non soluta. Nisi.</p>
+<a href="" class="btm">Learn More</a>
+</div>
+
+<div  class="cols">
+    <img src="women5 - Copy.jpg" alt="">
+    <span>TITLE 1</span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque dolorum a! Eligendi consequatur distinctio unde quas, non soluta. Nisi.</p>
+    <a href="" class="btm">Learn More</a>    
+</div>
+
+<div  class="cols">
+    <img src="women7.jpg" alt="">
+<span>TITLE 1</span>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque dolorum a! Eligendi consequatur distinctio unde quas, non soluta. Nisi.</p>
+<a href="" class="btm">Learn More</a>
+</div>
+</div>
+</section>  
+ 
+<!-- footer-end -->
+<section>
+    <div class="footer">
+<div class="footer-list">
+<span>Company</span>
+<ul>
+    <li>About us</li>
+    <li>Our Services</li>
+    <li>Privacy Policy</li>
+    <li>Afficate System</li>
+</ul>
+</div>
+
+<div class="footer-list">
+    <span>Get Help</span>
+    <ul>
+        <li>FaQ</li>
+        <li>Shipping</li>
+        <li>Returns</li>
+        <li>Order-Status</li>
+        <li>Payment-Status</li>
+    </ul>
+    </div>
+
+    
+    <div class="footer-list">
+        <span>Online</span>
+        <ul>
+            <li>Watch</li>
+            <li>Blog</li>
+            <li>shoes</li>
+            <li>Dress</li>
+        </ul>
+        </div>
+        
+        
+        <div class="footer-list">
+            <span>Follow Us</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
